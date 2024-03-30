@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 float InserirNotas();
 float CalcMedia(float n1, float n2);
@@ -19,6 +20,8 @@ int main(int argc, char const *argv[])
         NotasP2[i] = 0;
         Medias[i] = 0;
     }
+    //função memset para setar matriz para caracteres vazio ' '
+    memset(Nomes, ' ',sizeof(Nomes));
     // Menu
     while (opcao_Menu != 5)
     {   
